@@ -12,7 +12,7 @@ namespace Redis2Go
 
     public static class RedisTypesExtensions
     {
-        private static readonly string CurrentDirectory = new DirectoryInfo(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile), @".nuget\packages\redis2go.alpha\"))
+        private static readonly string CurrentDirectory = new DirectoryInfo(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile), @".nuget\packages\redis2go.omega\"))
             .GetFileSystemInfos("tools", SearchOption.AllDirectories).OrderByDescending(x => x.LastWriteTimeUtc).First().FullName;
 
         private static readonly string Redis64 = $@"{CurrentDirectory}\Redis64\";
